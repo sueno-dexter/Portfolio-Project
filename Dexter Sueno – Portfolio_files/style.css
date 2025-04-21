@@ -1,0 +1,270 @@
+/* General Styling */
+body {
+  font-family: 'Space Mono', monospace; /* Futuristic monospace font */
+  background: radial-gradient(circle, #111, #000); /* Deep space gradient */
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+  line-height: 1.6; /* Improved readability */
+  text-align: center; /* Center-aligned text */
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+/* Section Styling (Example: Hero Section) */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Vertical alignment for better mobile responsiveness */
+  justify-content: center;
+  align-items: center;
+  background: url('/img/hero-background.jpg') no-repeat center center; /* Updated background */
+  background-size: cover;
+  text-align: center; /* Center-aligned text */
+  padding: 2rem;
+  color: white;
+}
+
+/* Reusable Component: Card */
+.card {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin: 2rem 0;
+  max-width: 80%; /* Responsive width */
+}
+
+/* Navigation (Simplified) */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0ff; /* Neon green on hover */
+}
+
+/* Animations (Example: subtle glow) */
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #0ff;
+  }
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to bottom, #111, #000); /* Deep space gradient */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h2 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic heading */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.contact button {
+  background-color: #0ff; /* Futuristic neon green */
+  color: #181818;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
+
+.contact button:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0ff; /* Neon green */
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Alienated Elements */
+.alienated-element {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+  animation: float 5s infinite;
+}
+
+.alienated-element.shape {
+  background-color: rgba(255, 204, 0, 0.5); /* Yellowish-green */
+  border-radius: 50%;
+}
+
+.alienated-element.shape1 {
+  top: 10%;
+  left: 20%;
+  width: 100px;
+  height: 100px;
+}
+
+.alienated-element.shape2 {
+  bottom: 10%;
+  right: 20%;
+  width: 150px;
+  height: 150px;
+}
+
+.alienated-element.text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #0ff; /* Neon green */
+  text-shadow: 0 0 10px #0ff; /* Neon glow */
+}
+
+.alienated-element.text1 {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alienated-element.text2 {
+  bottom: 20%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+  }
+
+  .alienated-element.text1,
+  .alienated-element.text2 {
+    font-size: 1.5rem;
+  }
+}
+.about-image img {
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-image img:hover {
+  transform: scale(1.1); /* Zoom on hover */
+}
